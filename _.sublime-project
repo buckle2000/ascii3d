@@ -1,0 +1,36 @@
+{
+	"build_systems":
+	[
+		{
+			"cmd": "test.cmd",
+			"name": "Test",
+			"shell": true,
+			"working_dir": "$project_path"
+		},
+		{
+			"cmd": "clean.cmd",
+			"name": "Clean",
+			"shell": true,
+			"working_dir": "$project_path"
+		},
+		{
+			"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+			"name": "Anaconda Python Builder",
+			"selector": "source.python",
+			"shell_cmd": "\"python\" -u \"$file\""
+		}
+	],
+	"folders":
+	[
+		{
+			"path": "dynamic"
+		},
+		{
+			"path": "static"
+		},
+		{
+			"name": "export",
+			"path": "__pycache__/src"
+		}
+	]
+}

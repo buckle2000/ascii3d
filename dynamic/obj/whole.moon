@@ -1,0 +1,11 @@
+--- Events
+-- load map
+-- add player
+-- remove player
+-- move player
+-- player die
+-- player chat?
+
+--- IO Plugins
+-- local events
+-- network events
